@@ -2,8 +2,8 @@
 ## How to create function in PowerShell
 function create-vm-linux{
     param(
-        $rgName="vm2020",
-        $VMName="dev2020",
+        $rgName="jdaz203",
+        $VMName="jdaz203vm",
         $secret
     )
     az group create --location westus --name $rgName
