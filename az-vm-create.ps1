@@ -7,7 +7,7 @@ function create-vm-linux{
         $secret
     )
     az group create --location westus --name $rgName
-    az vm create --resource-group $rgName --name $VMName --image Debian --admin-username sysadmin --admin-password $secret
+    az vm create --resource-group $rgName --name $VMName --image Debian --admin-username sysadmin --admin-password $secret -tags "env=tst"
 }
 
 ## How to run ? 
